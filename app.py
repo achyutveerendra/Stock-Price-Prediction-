@@ -6,7 +6,8 @@ from keras.models import load_model
 import pickle
 import datetime
 
-app = Flask(__name__)
+app = Flask(__name__, static_url_path='', static_folder='static', template_folder='templates')
+
 
 # Load the model and scaler
 print("Loading model...")
